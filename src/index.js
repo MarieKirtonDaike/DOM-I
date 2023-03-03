@@ -39,4 +39,106 @@ const siteContent = { // DO NOT CHANGE THIS OBJECT
   },
 };
 
+
+// MAIN NAV
+const mainNav1 = document.querySelector("nav a")
+const mainNav2 = mainNav1.nextElementSibling
+const mainNav3 = mainNav2.nextElementSibling
+const mainNav4 = mainNav3.nextElementSibling
+const mainNav5 = mainNav4.nextElementSibling
+const mainNav6 = mainNav5.nextElementSibling
+
+const links = document.querySelectorAll("nav a")
+
+links.forEach(link => link.classList = "italic")
+
+mainNav1.textContent = siteContent["nav"]["nav-item-1"]
+mainNav2.textContent = siteContent["nav"]["nav-item-2"]
+mainNav3.textContent = siteContent["nav"]["nav-item-3"]
+mainNav4.textContent = siteContent["nav"]["nav-item-4"]
+mainNav5.textContent = siteContent["nav"]["nav-item-5"]
+mainNav6.textContent = siteContent["nav"]["nav-item-6"]
+
+
+// IMG
+
+const img = document.querySelector("#cta-img")
+
+img.src = "http://localhost:9000/img/cta.png"
+img.alt = "Image of a code snippet"
+
+const middleimg = document.querySelector("#middle-img")
+middleimg.src = "http://localhost:9000/img/accent.png"
+middleimg.alt = "Image of code snippets across the screen"
+
+
+const ctaimg = document.querySelector("#cta-img")
+ctaimg.src="http://localhost:9000/img/cta.png"
+ctaimg.alt= "Image of a code snippet"
+
+
+
+// BODY
+const h1 = document.querySelector("h1")
+
+const button1 = document.querySelector("button")
+const logo = document.querySelector("#logo-img")
+logo.src= "http://localhost:9000/img/logo.png"
+
+h1.textContent = siteContent["cta"]["h1"]
+
+button1.textContent= siteContent["cta"]["button"]
+
+
+// Top Content
+
+const featuresh4 = document.querySelectorAll(".top-content .text-content h4")
+
+featuresh4[0].textContent = siteContent["main-content"]["features-h4"]
+featuresh4[1].textContent = siteContent["main-content"]["about-h4"]
+
+const featuresp = document.querySelectorAll(".top-content .text-content p")
+featuresp[0].textContent = siteContent["main-content"]["features-content"]
+console.log(featuresp[0].textContent)
+
+featuresp[1].textContent = siteContent["main-content"]["about-content"]
+
+
+
+
+
+// Bottom Content
+const bottomtext = document.querySelector(".bottom-content .text-content p")
+bottomtext.textContent = siteContent["main-content"]["services-content"]
+
+
+const listh4 = document.querySelectorAll(".bottom-content h4")
+
+listh4[0].textContent = siteContent["main-content"]["services-h4"]
+listh4[1].textContent = siteContent["main-content"]["product-h4"]
+listh4[2].textContent = siteContent["main-content"]["vision-h4"]
+
+
+const paralist = document.querySelectorAll(".bottom-content p")
+paralist[0].textContent = siteContent["main-content"]["services-content"]
+paralist[1].textContent = siteContent["main-content"]["product-content"]
+paralist[2].textContent = siteContent["main-content"]["vision-content"]
+
+
+// FOOTER
+
+const contact = document.querySelector(".contact h4")
+const p1 = contact.nextElementSibling
+const p2 = p1.nextElementSibling
+const p3 = p2.nextElementSibling
+
+contact.textContent = siteContent["contact"]["contact-h4"]
+p1.textContent = siteContent["contact"]["address"]
+p2.textContent = siteContent["contact"]["phone"]
+p3.textContent = siteContent["contact"]["email"]
+
+const footer = document.querySelector("footer a")
+footer.classList = "bold"
 console.log('project wired!')
+
+footer.textContent = siteContent["footer"]["copyright"]
